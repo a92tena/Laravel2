@@ -1,0 +1,63 @@
+                                                                docker compose up
+time="2024-05-17T17:39:29+02:00" level=warning msg="E:\\DAW\\DAW 2023\\Desarrollo web en entorno servidor\\Segunda Evaluacion\\pp\\LAravel1\\Proyecto-Laravel-2-Evaluacion\\Proyecto_Laravel\\docker-compose.yaml: `version` is obsolete"
+[+] Running 0/0
+ - Network proyecto_laravel_default  Creating                                                                                                                                                                               0.0s 
+
+
+
+
+
+[+] Running 1/3
+ ✔ Network proyecto_laravel_default         Created                                                                                                                                                                         0.1s 
+ - Container proyecto_laravel-mysql-1       Created                                                                                                                                                                         0.7s 
+ - Container proyecto_laravel-phpmyadmin-1  Created                                                                                                                                                                         0.3s 
+Attaching to mysql-1, phpmyadmin-1
+mysql-1       | 2024-05-17 15:39:31+00:00 [Note] [Entrypoint]: Entrypoint script for MySQL Server 8.4.0-1.el8 started.
+phpmyadmin-1  | AH00558: apache2: Could not reliably determine the server's fully qualified domain name, using 172.18.0.3. Set the 'ServerName' directive globally to suppress this message
+phpmyadmin-1  | AH00558: apache2: Could not reliably determine the server's fully qualified domain name, using 172.18.0.3. Set the 'ServerName' directive globally to suppress this message
+phpmyadmin-1  | [Fri May 17 15:39:32.031253 2024] [mpm_prefork:notice] [pid 1] AH00163: Apache/2.4.59 (Debian) PHP/8.2.18 configured -- resuming normal operations
+phpmyadmin-1  | [Fri May 17 15:39:32.031288 2024] [core:notice] [pid 1] AH00094: Command line: 'apache2 -D FOREGROUND'
+mysql-1       | 2024-05-17 15:39:32+00:00 [Note] [Entrypoint]: Switching to dedicated user 'mysql'
+mysql-1       | 2024-05-17 15:39:32+00:00 [Note] [Entrypoint]: Entrypoint script for MySQL Server 8.4.0-1.el8 started.
+mysql-1       | 2024-05-17 15:39:32+00:00 [Note] [Entrypoint]: Initializing database files
+mysql-1       | 2024-05-17T15:39:32.364154Z 0 [System] [MY-015017] [Server] MySQL Server Initialization - start.
+mysql-1       | 2024-05-17T15:39:32.366142Z 0 [System] [MY-013169] [Server] /usr/sbin/mysqld (mysqld 8.4.0) initializing of server in progress as process 81
+mysql-1       | 2024-05-17T15:39:32.393157Z 0 [Warning] [MY-010159] [Server] Setting lower_case_table_names=2 because file system for /var/lib/mysql/ is case insensitive
+mysql-1       | 2024-05-17T15:39:32.504331Z 1 [System] [MY-013576] [InnoDB] InnoDB initialization has started.
+mysql-1       | 2024-05-17T15:39:44.777845Z 1 [System] [MY-013577] [InnoDB] InnoDB initialization has ended.
+mysql-1       | mysqld: Cannot change permissions of the file 'ca.pem' (OS errno 1 - Operation not permitted)
+mysql-1       | 2024-05-17T15:40:07.447272Z 0 [ERROR] [MY-010295] [Server] Could not set file permission for ca.pem
+mysql-1       | 2024-05-17T15:40:07.447306Z 0 [ERROR] [MY-013236] [Server] The designated data directory /var/lib/mysql/ is unusable. You can remove all files that the server added to it.
+mysql-1       | 2024-05-17T15:40:07.447311Z 0 [ERROR] [MY-010119] [Server] Aborting
+mysql-1       | 2024-05-17T15:40:10.803445Z 0 [System] [MY-015018] [Server] MySQL Server Initialization - end.
+mysql-1 exited with code 1
+mysql-1       | 2024-05-17 15:40:19+00:00 [Note] [Entrypoint]: Switching to dedicated user 'mysql'
+mysql-1       | 2024-05-17 15:40:19+00:00 [Note] [Entrypoint]: Entrypoint script for MySQL Server 8.4.0-1.el8 started.
+mysql-1       | ln: failed to create symbolic link '/var/lib/mysql/mysql.sock': Operation not permitted
+mysql-1       | 2024-05-17T15:40:19.416491Z 0 [System] [MY-015015] [Server] MySQL Server - start.
+mysql-1       | 2024-05-17T15:40:19.610973Z 0 [System] [MY-010116] [Server] /usr/sbin/mysqld (mysqld 8.4.0) starting as process 1
+mysql-1       | 2024-05-17T15:40:19.629049Z 0 [Warning] [MY-010159] [Server] Setting lower_case_table_names=2 because file system for /var/lib/mysql/ is case insensitive
+mysql-1       | 2024-05-17T15:40:20.010593Z 0 [Warning] [MY-000054] [Server] World-writable config file '/var/lib/mysql/auto.cnf' is ignored.
+mysql-1       | 2024-05-17T15:40:20.016822Z 0 [Warning] [MY-010107] [Server] World-writable config file '/var/lib/mysql/auto.cnf' has been removed.
+mysql-1       | 2024-05-17T15:40:20.017407Z 0 [Warning] [MY-010075] [Server] No existing UUID has been found, so we assume that this is the first time that this server has been started. Generating a new UUID: c457aec8-1463-11ef-aa8f-0242ac120002.
+mysql-1       | 2024-05-17T15:40:20.080540Z 1 [System] [MY-013576] [InnoDB] InnoDB initialization has started.
+mysql-1       | 2024-05-17T15:40:23.888985Z 1 [System] [MY-013577] [InnoDB] InnoDB initialization has ended.
+mysql-1       | mysqld: Table 'mysql.plugin' doesn't exist
+mysql-1       | 2024-05-17T15:40:25.691858Z 0 [ERROR] [MY-010735] [Server] Could not open the mysql.plugin table. Please perform the MySQL upgrade procedure.
+mysql-1       | 2024-05-17T15:40:25.692059Z 0 [Warning] [MY-010441] [Server] Failed to open optimizer cost constant tables
+mysql-1       | 2024-05-17T15:40:25.692210Z 0 [Warning] [MY-010441] [Server] Failed to open optimizer cost constant tables
+mysql-1       | 2024-05-17T15:40:25.692359Z 0 [Warning] [MY-010441] [Server] Failed to open optimizer cost constant tables
+mysql-1       | 2024-05-17T15:40:25.692576Z 0 [Warning] [MY-010441] [Server] Failed to open optimizer cost constant tables
+mysql-1       | 2024-05-17T15:40:25.692712Z 0 [Warning] [MY-010441] [Server] Failed to open optimizer cost constant tables
+mysql-1       | 2024-05-17T15:40:25.692865Z 0 [Warning] [MY-010441] [Server] Failed to open optimizer cost constant tables
+mysql-1       | 2024-05-17T15:40:25.692988Z 0 [Warning] [MY-010441] [Server] Failed to open optimizer cost constant tables
+mysql-1       | 2024-05-17T15:40:29.658247Z 0 [Warning] [MY-010015] [Repl] Gtid table is not ready to be used. Table 'mysql.gtid_executed' cannot be opened.
+mysql-1       | 2024-05-17T15:40:30.638153Z 0 [Warning] [MY-010015] [Repl] Gtid table is not ready to be used. Table 'mysql.gtid_executed' cannot be opened.
+mysql-1       | 2024-05-17T15:40:30.703637Z 0 [Warning] [MY-013595] [Server] Failed to initialize TLS for channel: mysql_main. See below for the description of exact issue.
+mysql-1       | 2024-05-17T15:40:30.703684Z 0 [Warning] [MY-010069] [Server] Failed to set up SSL because of the following SSL library error: SSL context is not usable without certificate and private key
+mysql-1       | mysqld: Cannot change permissions of the file 'private_key.pem.temp' (OS errno 1 - Operation not permitted)
+mysql-1       | 2024-05-17T15:40:30.878242Z 0 [ERROR] [MY-010295] [Server] Could not set file permission for private_key.pem
+mysql-1       | 2024-05-17T15:40:30.878269Z 0 [ERROR] [MY-010119] [Server] Aborting
+mysql-1       | 2024-05-17T15:40:33.011144Z 0 [System] [MY-010910] [Server] /usr/sbin/mysqld: Shutdown complete (mysqld 8.4.0)  MySQL Community Server - GPL.
+mysql-1       | 2024-05-17T15:40:33.011172Z 0 [System] [MY-015016] [Server] MySQL Server - end.
+mysql-1 exited with code 1

@@ -1,0 +1,33 @@
+phpmyadmin-1  | AH00558: apache2: Could not reliably determine the server's fully qualified domain name, using 172.24.0.3. Set the 'ServerName' directive globally to suppress this message
+                    phpmyadmin-1  | AH00558: apache2: Could not reliably determine the server's fully qualified domain name, using 172.24.0.3. Set the 'ServerName' directive globally to suppress this message
+                    mysql-1       | 2024-05-17 18:02:01+00:00 [Note] [Entrypoint]: Entrypoint script for MySQL Server 8.4.0-1.el8 started.
+                    phpmyadmin-1  | [Fri May 17 18:02:02.278676 2024] [mpm_prefork:notice] [pid 1] AH00163: Apache/2.4.59 (Debian) PHP/8.2.18 configured -- resuming normal operations
+                    mysql-1       | 2024-05-17 18:02:02+00:00 [Note] [Entrypoint]: Switching to dedicated user 'mysql'
+                    phpmyadmin-1  | [Fri May 17 18:02:02.278711 2024] [core:notice] [pid 1] AH00094: Command line: 'apache2 -D FOREGROUND'
+                    mysql-1       | 2024-05-17 18:02:02+00:00 [Note] [Entrypoint]: Entrypoint script for MySQL Server 8.4.0-1.el8 started.
+                    mysql-1       | 2024-05-17 18:02:02+00:00 [Note] [Entrypoint]: Initializing database files
+                    mysql-1       | 2024-05-17T18:02:02.384206Z 0 [System] [MY-015017] [Server] MySQL Server Initialization - start.
+                    mysql-1       | 2024-05-17T18:02:02.385599Z 0 [System] [MY-013169] [Server] /usr/sbin/mysqld (mysqld 8.4.0) initializing of server in progress as process 81
+                    mysql-1       | 2024-05-17T18:02:02.405407Z 0 [Warning] [MY-010159] [Server] Setting lower_case_table_names=2 because file system for /var/lib/mysql/ is case insensitive
+                    mysql-1       | 2024-05-17T18:02:02.464515Z 1 [System] [MY-013576] [InnoDB] InnoDB initialization has started.
+                    mysql-1       | 2024-05-17T18:02:14.590730Z 1 [System] [MY-013577] [InnoDB] InnoDB initialization has ended.
+                    mysql-1       | mysqld: Cannot change permissions of the file 'ca.pem' (OS errno 1 - Operation not permitted)
+                    mysql-1       | 2024-05-17T18:02:39.295897Z 0 [ERROR] [MY-010295] [Server] Could not set file permission for ca.pem
+                    mysql-1       | 2024-05-17T18:02:39.295936Z 0 [ERROR] [MY-013236] [Server] The designated data directory /var/lib/mysql/ is unusable. You can remove all files that the server added to it.
+                    mysql-1       | 2024-05-17T18:02:39.295942Z 0 [ERROR] [MY-010119] [Server] Aborting
+                    mysql-1       | 2024-05-17T18:02:42.796384Z 0 [System] [MY-015018] [Server] MySQL Server Initialization - end.
+                    mysql-1       | 2024-05-17 18:04:35+00:00 [Note] [Entrypoint]: Entrypoint script for MySQL Server 8.4.0-1.el8 started.
+                    mysql-1       | 2024-05-17 18:04:35+00:00 [Note] [Entrypoint]: Switching to dedicated user 'mysql'
+                    mysql-1       | 2024-05-17 18:04:35+00:00 [Note] [Entrypoint]: Entrypoint script for MySQL Server 8.4.0-1.el8 started.
+                    mysql-1       | 2024-05-17 18:04:35+00:00 [Note] [Entrypoint]: Initializing database files
+                    mysql-1       | 2024-05-17T18:04:35.591709Z 0 [System] [MY-015017] [Server] MySQL Server Initialization - start.
+                    mysql-1       | 2024-05-17T18:04:35.593546Z 0 [System] [MY-013169] [Server] /usr/sbin/mysqld (mysqld 8.4.0) initializing of server in progress as process 80
+                    mysql-1       | 2024-05-17T18:04:35.616596Z 0 [Warning] [MY-010159] [Server] Setting lower_case_table_names=2 because file system for /var/lib/mysql/ is case insensitive
+                    mysql-1       | 2024-05-17T18:04:35.679027Z 1 [System] [MY-013576] [InnoDB] InnoDB initialization has started.
+                    mysql-1       | 2024-05-17T18:04:48.052775Z 1 [System] [MY-013577] [InnoDB] InnoDB initialization has ended.
+                    mysql-1       | mysqld: Cannot change permissions of the file 'ca.pem' (OS errno 1 - Operation not permitted)
+                    mysql-1       | 2024-05-17T18:05:11.833988Z 0 [ERROR] [MY-010295] [Server] Could not set file permission for ca.pem
+                    mysql-1       | 2024-05-17T18:05:11.834020Z 0 [ERROR] [MY-013236] [Server] The designated data directory /var/lib/mysql/ is unusable. You can remove all files that the server added to it.
+                    mysql-1       | 2024-05-17T18:05:11.834025Z 0 [ERROR] [MY-010119] [Server] Aborting
+                    mysql-1       | 2024-05-17T18:05:15.070884Z 0 [System] [MY-015018] [Server] MySQL Server Initialization - end.
+mysql-1 exited with code 1
