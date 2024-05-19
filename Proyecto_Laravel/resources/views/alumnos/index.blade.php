@@ -36,9 +36,12 @@
                 </a>
             </td>
             <td>
-                <form action="{{route("$alumnos.destroy", $alumno->id)}}}" method="POST">
-                    @csrf
-                    @method("DELETE")
+
+                    <form action="{{ route("alumnos.destroy", $alumno->id) }}" method="POST"
+                          id="deleteForm{{ $alumno->id }}">
+
+                            @csrf
+                            @method("DELETE")
                 <button type="submit">
                     <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor"
                          class="w-8 h-8 text-red-900">

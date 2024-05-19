@@ -73,7 +73,6 @@ class AlumnoController extends Controller
      */
     public function destroy(Alumno $alumno)
     {
-
         session()->flash("status", "Se ha borrado el alumno $alumno->id con nombre: $alumno->nombre");
         $alumno->delete();
         return redirect()->route('alumnos.index');

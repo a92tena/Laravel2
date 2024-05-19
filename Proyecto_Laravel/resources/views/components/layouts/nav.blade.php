@@ -8,5 +8,4 @@
     @auth
     <a class= "btn  btn-primary " href="proyecto">Proyectos</a>
     @endauth
-    <a class= "btn  btn-primary " href="">Contacta</a>
 </nav>

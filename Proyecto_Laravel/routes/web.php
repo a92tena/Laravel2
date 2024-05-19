@@ -17,9 +17,10 @@ use App\Http\Controllers\MainController;
 Route::get("/",[MainController::class,'index'])->name("main");
 Route::view("about","Proyectos.about");
 Route::view("proyecto","Proyectos.proyecto")
-->middleware("auth");
-route::resource("alumnos",AlumnoController::class);
-
+    ->middleware("auth");
+Route::middleware(['auth'])->group(function () {
+    Route::resource("alumnos", \App\Http\Controllers\AlumnoController::class);
+});
 Route::get('/dashboard', function () {
     return view('dashboard');
 })->middleware(['auth', 'verified'])->name('dashboard');
@@ -31,3 +32,10 @@ Route::middleware('auth')->group(function () {
 });
 
 require __DIR__.'/auth.php';
+
+
+
+
+
+
+
